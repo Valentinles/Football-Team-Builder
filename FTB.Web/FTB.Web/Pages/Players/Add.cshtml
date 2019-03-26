@@ -1,0 +1,59 @@
+﻿@page
+@model FTB.Web.Pages.Players.AddModel
+@{
+    ViewData["Title"] = "Add";
+}
+
+<h2>Add</h2>
+
+<form method="post">
+
+    <div class="form-group row">
+        <label asp-for="PlayerName" class="col-sm-1 col-form-label">Name</label>
+
+        <div class="col-sm-3">
+            <input asp-for="PlayerName" class="form-control">
+        </div>
+    </div>
+
+    <div class="form-group row">
+        <label asp-for="Age" class="col-sm-1 col-form-label"></label>
+
+        <div class="col-sm-3">
+            <input asp-for="Age" class="form-control">
+        </div>
+    </div>
+
+    <div class="form-group row">
+        <label asp-for="Biography" class="col-sm-1 col-form-label"></label>
+
+        <div class="col-sm-3">
+            <textarea asp-for="Biography" class="form-control"></textarea>
+        </div>
+    </div>
+
+    <div class="form-group row">
+        <label asp-for="TeamId" class="col-sm-1 col-form-label"></label>
+
+        <div class="col-sm-3">
+            @Html.DropDownList("TeamId", Model.Teams, null, new { @class = "form-control" })
+        </div>
+    </div>
+
+    <div class="form-group row">
+        <label asp-for="PlayerImage" class="col-sm-1 col-form-label">Image</label>
+
+        <div class="col-sm-3">
+            <input asp-for="PlayerImage" class="form-control">
+        </div>
+    </div>
+
+
+    <div class="form-group row">
+
+        <div class="col-sm-2">
+            <input type="submit" class="btn btn-success" value="Add player">
+        </div>
+    </div>
+
+</form>

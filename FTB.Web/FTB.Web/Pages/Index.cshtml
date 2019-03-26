@@ -1,0 +1,32 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+<br />
+<br />
+<div class="text-center">
+    <h2>Football Team Builder - VN</h2>
+</div>
+<br />
+<br />
+<div class="row">
+    <div class="card" style="width: 18rem; margin-right: 550px">
+        <img class="card-img-top" src="~/images/footballpitch.jpg" alt="Card image cap">
+        <div class="card-body">
+            <h5 class="card-title">Build team</h5>
+            <p class="card-text">Create your favourite team and conquer the football world!</p>
+            <a asp-page="Teams/Create" class="btn btn-primary">Start now</a>
+        </div>
+    </div>
+
+    <div class="card" style="width: 18rem;">
+        <img class="card-img-top" src="~/images/1.jpg" alt="Card image cap">
+        <div class="card-body">
+            <h5 class="card-title">Add player</h5>
+            <p class="card-text">What is a team without players? Add you dream players!</p>
+            <a asp-page="Players/Add" class="btn btn-primary">Add player</a>
+        </div>
+    </div>
+</div>
+  

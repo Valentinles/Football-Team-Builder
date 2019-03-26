@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.421
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FTB.Web", "FTB.Web\FTB.Web.csproj", "{427EC9A6-AC99-4CD4-ADF7-D3399E173430}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FTB.Data", "FTB.Data\FTB.Data.csproj", "{68FD9A1F-59B3-44B0-ADB1-3FAC9F50F203}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FTB.Models", "FTB.Models\FTB.Models.csproj", "{735670D7-F4F2-4C49-BD64-32658D0D6379}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{427EC9A6-AC99-4CD4-ADF7-D3399E173430}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{427EC9A6-AC99-4CD4-ADF7-D3399E173430}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{427EC9A6-AC99-4CD4-ADF7-D3399E173430}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{427EC9A6-AC99-4CD4-ADF7-D3399E173430}.Release|Any CPU.Build.0 = Release|Any CPU
+		{68FD9A1F-59B3-44B0-ADB1-3FAC9F50F203}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{68FD9A1F-59B3-44B0-ADB1-3FAC9F50F203}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{68FD9A1F-59B3-44B0-ADB1-3FAC9F50F203}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{68FD9A1F-59B3-44B0-ADB1-3FAC9F50F203}.Release|Any CPU.Build.0 = Release|Any CPU
+		{735670D7-F4F2-4C49-BD64-32658D0D6379}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{735670D7-F4F2-4C49-BD64-32658D0D6379}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{735670D7-F4F2-4C49-BD64-32658D0D6379}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{735670D7-F4F2-4C49-BD64-32658D0D6379}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1C3FC0EC-3ABD-468F-8ED3-F92BFAF7DCB3}
+	EndGlobalSection
+EndGlobal

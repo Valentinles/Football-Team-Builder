@@ -1,0 +1,33 @@
+﻿@page
+@model FTB.Web.Pages.Players.ExistingPlayersModel
+@{
+    ViewData["Title"] = "ExistingPlayers";
+}
+
+<br />
+<br />
+
+<div class="form-group row">
+    <table class="table table-hover ">
+        <thead>
+            <tr>
+                <th>Players</th>
+                <th>Team</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var player in Model.Players)
+            {
+            <tr>
+                <th>
+                    <a asp-page="/Players/Details" asp-route-id="@(player.Id)">@player.Name</a>
+                </th>
+
+                <th>
+                    <a asp-page="/Teams/Details" asp-route-id="@player.TeamId"><img src="@player.PlayerTeamLogo" width="25" /></a>
+                </th>
+            </tr>
+            }
+        </tbody>
+    </table>
+</div>

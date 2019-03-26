@@ -1,0 +1,38 @@
+﻿@page "{id}"
+@model FTB.Web.Pages.Teams.DetailsModel
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1 align="center" >@Model.Name</h1>
+<br />
+
+<img src="@Model.TeamLogo" width="100" class="rounded mx-auto d-block" />
+<br />
+<div align="center">
+    <h6>Nationality: @Model.Nationality</h6>
+    <h6>League: @Model.League</h6>
+    <br />
+    <br />
+    <h3>Squad</h3>
+   
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th class="text-center">Name</th>
+                <th class="text-center">Age</th>
+                <th class="text-center">Biography</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var player in Model.Players)
+            {
+            <tr>
+                <th class="text-center"><a asp-page="/Players/Details" asp-route-id="@(player.Id)">@player.PlayerName</a></th>
+                <th class="text-center">@player.Age</th>
+                <th class="text-secondary text-sm-center" >@player.Biography</th>
+            </tr>
+            }
+        </tbody>
+    </table>
+</div>

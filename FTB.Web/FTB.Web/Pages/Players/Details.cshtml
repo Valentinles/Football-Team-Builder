@@ -1,0 +1,20 @@
+﻿@page "{id}"
+@model FTB.Web.Pages.Players.InformationModel
+@{
+    ViewData["Title"] = "Information";
+}
+
+<h3 align="center">Player Bio</h3>
+<br />
+<h2 align="center">@Model.PlayerName</h2>
+<br />
+
+<img src="@Model.PlayerImage" width="700" class="rounded mx-auto d-block" />
+<br />
+<div align="center">
+    <p>Age: @Model.Age</p>
+    <p>@Model.Biography</p>
+</div>
+
+
+
