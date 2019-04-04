@@ -5,7 +5,7 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 
 namespace FTB.Web.Pages.Players
 {
-    public class InformationModel : PageModel
+    public class DetailsModel : PageModel
     {
         public InformationModel(FtbContext context)
         {
